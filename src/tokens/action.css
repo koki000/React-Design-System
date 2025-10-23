@@ -3,12 +3,12 @@
   --action-primary-rest: var(--color-brand-50);
   --action-primary-hover: var(--color-brand-60);
   --action-primary-active: var(--color-brand-70);
-  --action-secondary-rest: var(--color-white);
-  --action-secondary-hover: var(--color-neutral-80);
-  --action-secondary-active: var(--color-neutral-70);
-  --action-tertiary-rest: var(--color-white);
-  --action-tertiary-hover: var(--color-neutral-80);
-  --action-tertiary-active: var(--color-neutral-70);
+  --action-secondary-rest: var(--color-neutral-80);
+  --action-secondary-hover: var(--color-neutral-10);
+  --action-secondary-active: var(--color-neutral-20);
+  --action-tertiary-rest: var(--color-neutral-80);
+  --action-tertiary-hover: var(--color-neutral-10);
+  --action-tertiary-active: var(--color-neutral-20);
   --action-danger-rest: var(--color-red-60);
   --action-danger-hover: var(--color-red-70);
   --action-danger-active: var(--color-red-80);

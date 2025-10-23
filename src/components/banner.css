@@ -75,8 +75,8 @@
 }
 
 /* Emphasis variants */
-.ds-banner--strong {
-  background: var(--support-info);
+.ds-banner--strong.ds-banner--info {
+  background: var(--support-info-strong);
   color: var(--text-on-color);
 }
 .ds-banner--strong.ds-banner--success {

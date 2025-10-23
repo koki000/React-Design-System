@@ -1,16 +1,16 @@
 /* Color Tokens */
 :root {
   /* Brand Colors */
-  --color-brand-10: #dcede8ff;
-  --color-brand-20: #b8dbd1ff;
-  --color-brand-30: #95cabaff;
-  --color-brand-40: #71b8a3ff;
-  --color-brand-50: #4ba68bff;
-  --color-brand-60: #40957cff;
-  --color-brand-70: #37856eff;
-  --color-brand-80: #2e745fff;
-  --color-brand-90: #286452ff;
-  --color-brand-100: #215344ff;
+  --color-brand-10: #e2e9e7ff;
+  --color-brand-20: #b5c9c4ff;
+  --color-brand-30: #84a69bff;
+  --color-brand-40: #47796aff;
+  --color-brand-50: #326a59ff;
+  --color-brand-60: #2d5f50ff;
+  --color-brand-70: #285547ff;
+  --color-brand-80: #234a3eff;
+  --color-brand-90: #19352dff;
+  --color-brand-100: #142a24ff;
 
   /* Green Colors */
   --color-green-10: #e1faebff;

@@ -9,7 +9,7 @@
   font-size: var(--font-action-m-size);
   font-weight: var(--font-action-m-weight);
   line-height: var(--font-action-m-line-height);
-  border-radius: var(--radii-m-4);
+  border-radius: var(--radii-none);
   border-width: var(--stroke-width-m);
   border-style: solid;
   padding: var(--space-m-12) var(--space-m-24);
@@ -32,9 +32,9 @@
 }
 
 .ds-btn--secondary {
-  background: var(--action-secondary-rest);
-  color: var(--action-primary-rest);
-  border-color: var(--action-primary-rest);
+  background: transparent;
+  color: var(--action-secondary-rest);
+  border-color: var(--action-secondary-rest);
 }
 .ds-btn--secondary:hover {
   background: var(--action-secondary-hover);
@@ -44,28 +44,42 @@
 }
 
 .ds-btn--tertiary {
-  background: var(--action-tertiary-rest);
-  color: var(--text-primary);
-  border-color: var(--border-subtle);
+  background: transparent;
+  color: var(--action-tertiary-rest);
+  border-color: transparent;
 }
 .ds-btn--tertiary:hover {
-  background: var(--action-tertiary-hover);
+    background: var(--action-tertiary-hover);
 }
 .ds-btn--tertiary:active {
-  background: var(--action-tertiary-active);
+    background: var(--action-tertiary-active);
 }
 
-.ds-btn--danger {
+.ds-btn--danger-primary {
   background: var(--action-danger-rest);
   color: var(--text-on-color);
   border-color: var(--action-danger-rest);
 }
-.ds-btn--danger:hover {
+.ds-btn--danger-primary:hover {
   background: var(--action-danger-hover);
   border-color: var(--action-danger-hover);
 }
-.ds-btn--danger:active {
+.ds-btn--danger-primary:active {
   background: var(--action-danger-active);
+  border-color: var(--action-danger-active);
+}
+
+.ds-btn--danger-secondary {
+  background: transparent;
+  color: var(--action-danger-rest);
+  border-color: var(--action-danger-rest);
+}
+.ds-btn--danger-secondary:hover {
+  color: var(--action-danger-hover);
+  border-color: var(--action-danger-hover);
+}
+.ds-btn--danger-secondary:active {
+  color: var(--action-danger-active);
   border-color: var(--action-danger-active);
 }
 

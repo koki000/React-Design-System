@@ -25,26 +25,32 @@
 
 .ds-link--subtle {
   color: var(--link-subtle-rest);
+  text-decoration: none;
 }
 .ds-link--subtle:hover,
 .ds-link--subtle.ds-link--hover {
   color: var(--link-subtle-hover);
+  text-decoration: underline;
 }
 .ds-link--subtle:active,
 .ds-link--subtle.ds-link--active {
   color: var(--link-subtle-active);
+  text-decoration: underline;
 }
 
 .ds-link--danger {
   color: var(--link-danger-rest);
+  text-decoration: none;
 }
 .ds-link--danger:hover,
 .ds-link--danger.ds-link--hover {
   color: var(--link-danger-hover);
+  text-decoration: underline;
 }
 .ds-link--danger:active,
 .ds-link--danger.ds-link--active {
   color: var(--link-danger-active);
+  text-decoration: underline;
 }
 
 .ds-link--onColor {
