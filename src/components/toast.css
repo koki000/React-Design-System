@@ -1,0 +1,113 @@
+@import '../tokens/support.css';
+@import '../tokens/text.css';
+@import '../tokens/background.css';
+@import '../tokens/typography.css';
+@import '../tokens/radius.css';
+@import '../tokens/spacing.css';
+
+.ds-toast {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-m-12);
+  border-radius: var(--radii-m-4);
+  padding: var(--space-m-12) var(--space-m-24);
+  font-family: var(--font-family);
+  box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.12);
+  margin-bottom: var(--space-m-16);
+  min-width: 320px;
+  max-width: 400px;
+  background: var(--support-info-subtle);
+}
+
+.ds-toast__icon {
+  flex-shrink: 0;
+  font-size: var(--size-m-24);
+  margin-right: var(--space-m-12);
+}
+
+.ds-toast__content {
+  flex: 1;
+}
+
+.ds-toast__title {
+  font-size: var(--font-body-m-phat-size);
+  font-weight: var(--font-body-m-phat-weight);
+  line-height: var(--font-body-m-phat-line-height);
+  color: var(--text-primary);
+  margin-bottom: var(--space-s-4);
+}
+
+.ds-toast__message {
+  font-size: var(--font-body-m-skinny-size);
+  font-weight: var(--font-body-m-skinny-weight);
+  line-height: var(--font-body-m-skinny-line-height);
+  color: var(--text-secondary);
+}
+
+.ds-toast__link {
+  color: var(--link-default-rest);
+  text-decoration: underline;
+  margin-left: var(--space-s-8);
+  font-weight: var(--font-body-m-phat-weight);
+}
+
+.ds-toast__close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: var(--size-m-24);
+  cursor: pointer;
+  margin-left: var(--space-m-12);
+}
+
+/* Status variants */
+.ds-toast--info {
+  background: var(--support-info-subtle);
+  color: var(--support-info-strong);
+}
+.ds-toast--success {
+  background: var(--support-success-subtle);
+  color: var(--support-success-strong);
+}
+.ds-toast--warning {
+  background: var(--support-warning-subtle);
+  color: var(--support-warning-strong);
+}
+.ds-toast--error {
+  background: var(--support-error-subtle);
+  color: var(--support-error-strong);
+}
+
+/* Emphasis variants */
+.ds-toast--strong {
+  background: var(--support-info);
+  color: var(--text-on-color);
+}
+.ds-toast--strong.ds-toast--success {
+  background: var(--support-success);
+}
+.ds-toast--strong.ds-toast--warning {
+  background: var(--support-warning);
+}
+.ds-toast--strong.ds-toast--error {
+  background: var(--support-error);
+}
+
+/* Toast stack container */
+.ds-toast-stack {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: var(--space-m-16);
+  z-index: 9999;
+  pointer-events: none;
+  padding: var(--space-m-24);
+}
+
+.ds-toast-stack > .ds-toast {
+  pointer-events: auto;
+}
