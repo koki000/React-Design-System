@@ -1,0 +1,15 @@
+/* Semantic Link Tokens */
+:root {
+  --link-default-rest: var(--color-brand-50);
+  --link-default-hover: var(--color-brand-60);
+  --link-default-active: var(--color-brand-70);
+  --link-subtle-rest: var(--color-white);
+  --link-subtle-hover: var(--color-neutral-10);
+  --link-subtle-active: var(--color-neutral-20);
+  --link-danger-rest: var(--color-red-60);
+  --link-danger-hover: var(--color-red-70);
+  --link-danger-active: var(--color-red-80);
+  --link-on-color-rest: var(--color-white);
+  --link-on-color-hover: var(--color-neutral-10);
+  --link-on-color-active: var(--color-neutral-20);
+}

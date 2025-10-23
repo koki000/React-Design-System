@@ -1,0 +1,92 @@
+@import '../tokens/colors.css';
+@import '../tokens/typography.css';
+@import '../tokens/spacing.css';
+@import '../tokens/radius.css';
+@import '../tokens/stroke.css';
+
+.ds-btn {
+  font-family: var(--font-family);
+  font-size: var(--font-action-m-size);
+  font-weight: var(--font-action-m-weight);
+  line-height: var(--font-action-m-line-height);
+  border-radius: var(--radii-m-4);
+  border-width: var(--stroke-width-m);
+  border-style: solid;
+  padding: var(--space-m-12) var(--space-m-24);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.ds-btn--primary {
+  background: var(--action-primary-rest);
+  color: var(--text-on-color);
+  border-color: var(--action-primary-rest);
+}
+.ds-btn--primary:hover {
+  background: var(--action-primary-hover);
+  border-color: var(--action-primary-hover);
+}
+.ds-btn--primary:active {
+  background: var(--action-primary-active);
+  border-color: var(--action-primary-active);
+}
+
+.ds-btn--secondary {
+  background: var(--action-secondary-rest);
+  color: var(--action-primary-rest);
+  border-color: var(--action-primary-rest);
+}
+.ds-btn--secondary:hover {
+  background: var(--action-secondary-hover);
+}
+.ds-btn--secondary:active {
+  background: var(--action-secondary-active);
+}
+
+.ds-btn--tertiary {
+  background: var(--action-tertiary-rest);
+  color: var(--text-primary);
+  border-color: var(--border-subtle);
+}
+.ds-btn--tertiary:hover {
+  background: var(--action-tertiary-hover);
+}
+.ds-btn--tertiary:active {
+  background: var(--action-tertiary-active);
+}
+
+.ds-btn--danger {
+  background: var(--action-danger-rest);
+  color: var(--text-on-color);
+  border-color: var(--action-danger-rest);
+}
+.ds-btn--danger:hover {
+  background: var(--action-danger-hover);
+  border-color: var(--action-danger-hover);
+}
+.ds-btn--danger:active {
+  background: var(--action-danger-active);
+  border-color: var(--action-danger-active);
+}
+
+.ds-btn--disabled,
+.ds-btn:disabled {
+  background: var(--action-disabled);
+  color: var(--text-disabled);
+  border-color: var(--action-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ds-btn--small {
+  font-size: var(--font-action-m-size);
+  padding: var(--space-s-4) var(--space-m-12);
+}
+.ds-btn--medium {
+  font-size: var(--font-action-l-size);
+  padding: var(--space-m-12) var(--space-m-24);
+}
+.ds-btn--large {
+  font-size: var(--font-display-m-size);
+  padding: var(--space-m-16) var(--space-l-32);
+}

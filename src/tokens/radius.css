@@ -1,0 +1,8 @@
+/* Radius Tokens */
+:root {
+  --radii-s-2: 2px;
+  --radii-m-4: 4px;
+  --radii-l-8: 8px;
+  --radii-xl-48: 48px;
+  --radii-none: 0px;
+}

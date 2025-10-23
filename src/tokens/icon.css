@@ -1,0 +1,10 @@
+/* Semantic Icon Tokens */
+:root {
+  --icon-primary: var(--color-white);
+  --icon-secondary: var(--color-neutral-20);
+  --icon-on-color: var(--color-white);
+  --icon-inverse: var(--color-black);
+  --icon-disabled: var(--color-neutral-60);
+  --icon-interactive: var(--color-brand-50);
+  --icon-placeholder: var(--color-neutral-40);
+}

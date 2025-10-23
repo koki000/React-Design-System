@@ -1,0 +1,12 @@
+/* Semantic Surface Tokens */
+:root {
+  --surface-neutral-rest: var(--color-neutral-90);
+  --surface-neutral-hover: var(--color-neutral-80);
+  --surface-neutral-active: var(--color-brand-90);
+  --surface-subtle-rest: var(--color-neutral-80);
+  --surface-subtle-hover: var(--color-neutral-70);
+  --surface-subtle-active: var(--color-brand-90);
+  --surface-bold-rest: var(--color-white);
+  --surface-bold-hover: var(--color-neutral-10);
+  --surface-bold-active: var(--color-brand-10);
+}

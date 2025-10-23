@@ -1,0 +1,8 @@
+/* Semantic Background Tokens */
+:root {
+  --background-primary: var(--color-neutral-90);
+  --background-secondary: var(--color-neutral-80);
+  --background-tertiary: var(--color-neutral-70);
+  --background-inverse: var(--color-white);
+  --background-brand: var(--color-green-50);
+}

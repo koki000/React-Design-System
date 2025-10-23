@@ -1,0 +1,6 @@
+/* Stroke Width Tokens */
+:root {
+  --stroke-width-s: 1px;
+  --stroke-width-m: 2px;
+  --stroke-width-l: 3px;
+}

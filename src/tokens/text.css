@@ -1,0 +1,9 @@
+/* Semantic Text Tokens */
+:root {
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-neutral-20);
+  --text-placeholder: var(--color-neutral-40);
+  --text-on-color: var(--color-white);
+  --text-disabled: var(--color-neutral-60);
+  --text-inverse: var(--color-black);
+}

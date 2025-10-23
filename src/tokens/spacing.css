@@ -1,0 +1,19 @@
+/* Spacing Tokens */
+:root {
+  --space-s-2: 2px;
+  --space-s-4: 4px;
+  --space-s-8: 8px;
+  --space-m-12: 12px;
+  --space-m-16: 16px;
+  --space-m-24: 24px;
+  --space-l-32: 32px;
+  --space-l-40: 40px;
+  --space-l-48: 48px;
+  --space-l-64: 64px;
+  --space-l-80: 80px;
+  --space-negative-s-1: -1px;
+  --space-negative-s-2: -2px;
+  --space-negative-s-4: -4px;
+  --space-negative-s-8: -8px;
+  --space-none: 0px;
+}

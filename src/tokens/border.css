@@ -1,0 +1,6 @@
+/* Semantic Border Tokens */
+:root {
+  --border-subtle: var(--color-neutral-70);
+  --border-strong: var(--color-neutral-50);
+  --border-interactive: var(--color-brand-50);
+}

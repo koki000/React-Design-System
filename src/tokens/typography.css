@@ -1,0 +1,64 @@
+/* Typography Tokens */
+:root {
+  --font-family: 'Inter', sans-serif;
+  /* Display */
+  --font-display-xl-size: 80px;
+  --font-display-xl-weight: 600;
+  --font-display-xl-line-height: 88px;
+  --font-display-xl-letter-spacing: -2px;
+  --font-display-l-size: 72px;
+  --font-display-l-weight: 600;
+  --font-display-l-line-height: 87px;
+  --font-display-l-letter-spacing: 0px;
+  --font-display-m-size: 64px;
+  --font-display-m-weight: 600;
+  --font-display-m-line-height: 77px;
+  --font-display-m-letter-spacing: 0px;
+  /* Heading */
+  --font-heading-xl-size: 56px;
+  --font-heading-xl-weight: 500;
+  --font-heading-xl-line-height: 68px;
+  --font-heading-l-size: 48px;
+  --font-heading-l-weight: 500;
+  --font-heading-l-line-height: 58px;
+  --font-heading-m-size: 36px;
+  --font-heading-m-weight: 500;
+  --font-heading-m-line-height: 47px;
+  --font-heading-s-size: 26px;
+  --font-heading-s-weight: 500;
+  --font-heading-s-line-height: 34px;
+  --font-heading-xs-size: 22px;
+  --font-heading-xs-weight: 500;
+  --font-heading-xs-line-height: 29px;
+  /* Body */
+  --font-body-l-skinny-size: 16px;
+  --font-body-l-skinny-weight: 400;
+  --font-body-l-skinny-line-height: 24px;
+  --font-body-l-phat-size: 16px;
+  --font-body-l-phat-weight: 600;
+  --font-body-l-phat-line-height: 24px;
+  --font-body-m-skinny-size: 14px;
+  --font-body-m-skinny-weight: 400;
+  --font-body-m-skinny-line-height: 20px;
+  --font-body-m-phat-size: 14px;
+  --font-body-m-phat-weight: 600;
+  --font-body-m-phat-line-height: 20px;
+  --font-body-s-skinny-size: 12px;
+  --font-body-s-skinny-weight: 400;
+  --font-body-s-skinny-line-height: 16px;
+  --font-body-s-phat-size: 12px;
+  --font-body-s-phat-weight: 600;
+  --font-body-s-phat-line-height: 16px;
+  /* Caption */
+  --font-caption-m-uppercase-size: 12px;
+  --font-caption-m-uppercase-weight: 500;
+  --font-caption-m-uppercase-line-height: 16px;
+  --font-caption-m-uppercase-text-case: uppercase;
+  /* Action */
+  --font-action-l-size: 16px;
+  --font-action-l-weight: 500;
+  --font-action-l-line-height: 16px;
+  --font-action-m-size: 14px;
+  --font-action-m-weight: 500;
+  --font-action-m-line-height: 14px;
+}
