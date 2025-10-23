@@ -1,4 +1,9 @@
 import React, { useEffect } from 'react';
+import { RiCheckboxCircleFill } from '@remixicon/react'
+import { RiInformationFill } from '@remixicon/react'
+import { RiAlertFill } from '@remixicon/react';
+import { RiErrorWarningFill } from '@remixicon/react';
+import { RiCloseLine } from '@remixicon/react';
 import './toast.css';
 
 export type ToastStatus = 'info' | 'success' | 'warning' | 'error';
@@ -17,11 +22,36 @@ export interface ToastProps {
   className?: string;
 }
 
-const statusIcon: Record<ToastStatus, React.ReactNode> = {
-  info: <span aria-label="Info">ℹ️</span>,
-  success: <span aria-label="Success">✔️</span>,
-  warning: <span aria-label="Warning">⚠️</span>,
-  error: <span aria-label="Error">❌</span>,
+const statusIconColors: Record<ToastStatus, Record<'subtle' | 'strong', string>> = {
+  info: {
+    subtle: 'var(--support-info-strong)',
+    strong: 'var(--icon-on-color)',
+  },
+  success: {
+    subtle: 'var(--support-success-strong)',
+    strong: 'var(--icon-on-color)',
+  },
+  warning: {
+    subtle: 'var(--support-warning-strong)',
+    strong: 'var(--icon-on-color)',
+  },
+  error: {
+    subtle: 'var(--support-error-strong)',
+    strong: 'var(--icon-on-color)',
+  },
+};
+
+const statusIcon = (status: ToastStatus, emphasis: 'subtle' | 'strong'): React.ReactNode => {
+    const iconColor = statusIconColors[status][emphasis];
+    
+    const icons = {
+    info: <RiInformationFill size={20} color={iconColor} />,
+    success: <RiCheckboxCircleFill size={20} color={iconColor} />,
+    warning: <RiAlertFill size={20} color={iconColor} />,
+    error: <RiErrorWarningFill size={20} color={iconColor} />,
+  };
+  
+  return icons[status];
 };
 
 const Toast: React.FC<ToastProps> = ({
@@ -52,7 +82,7 @@ const Toast: React.FC<ToastProps> = ({
 
   return (
     <div className={classes} role="status">
-      <span className="ds-toast__icon">{statusIcon[status]}</span>
+      {statusIcon(status, emphasis)}
       <div className="ds-toast__content">
         {title && <div className="ds-toast__title">{title}</div>}
         <div className="ds-toast__message">{message}</div>
@@ -61,7 +91,7 @@ const Toast: React.FC<ToastProps> = ({
         )}
       </div>
       {onClose && (
-        <button className="ds-toast__close" onClick={() => onClose(id)} aria-label="Close">×</button>
+        <button className="ds-toast__close" onClick={() => onClose(id)} aria-label="Close"><RiCloseLine size={20} className='ds-banner__close'/></button>
       )}
     </div>
   );

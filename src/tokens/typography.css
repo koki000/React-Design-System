@@ -1,64 +1,106 @@
 /* Typography Tokens */
 :root {
   --font-family: 'Inter', sans-serif;
+
   /* Display */
   --font-display-xl-size: 80px;
   --font-display-xl-weight: 600;
   --font-display-xl-line-height: 88px;
   --font-display-xl-letter-spacing: -2px;
+
   --font-display-l-size: 72px;
   --font-display-l-weight: 600;
   --font-display-l-line-height: 87px;
   --font-display-l-letter-spacing: 0px;
+
   --font-display-m-size: 64px;
   --font-display-m-weight: 600;
   --font-display-m-line-height: 77px;
   --font-display-m-letter-spacing: 0px;
+
   /* Heading */
   --font-heading-xl-size: 56px;
   --font-heading-xl-weight: 500;
   --font-heading-xl-line-height: 68px;
+
   --font-heading-l-size: 48px;
   --font-heading-l-weight: 500;
   --font-heading-l-line-height: 58px;
+
   --font-heading-m-size: 36px;
   --font-heading-m-weight: 500;
   --font-heading-m-line-height: 47px;
+
   --font-heading-s-size: 26px;
   --font-heading-s-weight: 500;
   --font-heading-s-line-height: 34px;
+
   --font-heading-xs-size: 22px;
   --font-heading-xs-weight: 500;
   --font-heading-xs-line-height: 29px;
+
   /* Body */
   --font-body-l-skinny-size: 16px;
   --font-body-l-skinny-weight: 400;
   --font-body-l-skinny-line-height: 24px;
+
   --font-body-l-phat-size: 16px;
   --font-body-l-phat-weight: 600;
   --font-body-l-phat-line-height: 24px;
+
   --font-body-m-skinny-size: 14px;
   --font-body-m-skinny-weight: 400;
   --font-body-m-skinny-line-height: 20px;
+
   --font-body-m-phat-size: 14px;
   --font-body-m-phat-weight: 600;
   --font-body-m-phat-line-height: 20px;
+
   --font-body-s-skinny-size: 12px;
   --font-body-s-skinny-weight: 400;
   --font-body-s-skinny-line-height: 16px;
+
   --font-body-s-phat-size: 12px;
   --font-body-s-phat-weight: 600;
   --font-body-s-phat-line-height: 16px;
+
   /* Caption */
   --font-caption-m-uppercase-size: 12px;
   --font-caption-m-uppercase-weight: 500;
   --font-caption-m-uppercase-line-height: 16px;
   --font-caption-m-uppercase-text-case: uppercase;
+
   /* Action */
   --font-action-l-size: 16px;
   --font-action-l-weight: 500;
   --font-action-l-line-height: 16px;
+
   --font-action-m-size: 14px;
   --font-action-m-weight: 500;
   --font-action-m-line-height: 14px;
+
+  /* Shorthand font tokens (for use in "font:" property) */
+  --font-body-s-skinny: var(--font-body-s-skinny-weight) var(--font-body-s-skinny-size) / var(--font-body-s-skinny-line-height) var(--font-family);
+  --font-body-s-phat: var(--font-body-s-phat-weight) var(--font-body-s-phat-size) / var(--font-body-s-phat-line-height) var(--font-family);
+
+  --font-body-m-skinny: var(--font-body-m-skinny-weight) var(--font-body-m-skinny-size) / var(--font-body-m-skinny-line-height) var(--font-family);
+  --font-body-m-phat: var(--font-body-m-phat-weight) var(--font-body-m-phat-size) / var(--font-body-m-phat-line-height) var(--font-family);
+
+  --font-body-l-skinny: var(--font-body-l-skinny-weight) var(--font-body-l-skinny-size) / var(--font-body-l-skinny-line-height) var(--font-family);
+  --font-body-l-phat: var(--font-body-l-phat-weight) var(--font-body-l-phat-size) / var(--font-body-l-phat-line-height) var(--font-family);
+
+  --font-heading-xs: var(--font-heading-xs-weight) var(--font-heading-xs-size) / var(--font-heading-xs-line-height) var(--font-family);
+  --font-heading-s: var(--font-heading-s-weight) var(--font-heading-s-size) / var(--font-heading-s-line-height) var(--font-family);
+  --font-heading-m: var(--font-heading-m-weight) var(--font-heading-m-size) / var(--font-heading-m-line-height) var(--font-family);
+  --font-heading-l: var(--font-heading-l-weight) var(--font-heading-l-size) / var(--font-heading-l-line-height) var(--font-family);
+  --font-heading-xl: var(--font-heading-xl-weight) var(--font-heading-xl-size) / var(--font-heading-xl-line-height) var(--font-family);
+
+  --font-display-m: var(--font-display-m-weight) var(--font-display-m-size) / var(--font-display-m-line-height) var(--font-family);
+  --font-display-l: var(--font-display-l-weight) var(--font-display-l-size) / var(--font-display-l-line-height) var(--font-family);
+  --font-display-xl: var(--font-display-xl-weight) var(--font-display-xl-size) / var(--font-display-xl-line-height) var(--font-family);
+
+  --font-action-m: var(--font-action-m-weight) var(--font-action-m-size) / var(--font-action-m-line-height) var(--font-family);
+  --font-action-l: var(--font-action-l-weight) var(--font-action-l-size) / var(--font-action-l-line-height) var(--font-family);
+
+  --font-caption-m-uppercase: var(--font-caption-m-uppercase-weight) var(--font-caption-m-uppercase-size) / var(--font-caption-m-uppercase-line-height) var(--font-family);
 }

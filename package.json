@@ -41,5 +41,8 @@
     "design-system"
   ],
   "author": "Nikola Pejcic",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@remixicon/react": "^4.7.0"
+  }
 }

@@ -13,52 +13,52 @@
   --color-brand-100: #142a24ff;
 
   /* Green Colors */
-  --color-green-10: #e1faebff;
-  --color-green-20: #c6f0d6ff;
-  --color-green-30: #ace7c3ff;
-  --color-green-40: #93dbafff;
-  --color-green-50: #7ece9cff;
-  --color-green-60: #65c58aff;
-  --color-green-70: #52b678ff;
-  --color-green-80: #48a06aff;
-  --color-green-90: #3e895bff;
-  --color-green-100: #234d33ff;
+  --color-green-10: #E7F3EDff;
+  --color-green-20: #C9E4D7ff;
+  --color-green-30: #99CCB4ff;
+  --color-green-40: #53A77Fff;
+  --color-green-50: #11884Fff;
+  --color-green-60: #0F7A47ff;
+  --color-green-70: #0E6D3Fff;
+  --color-green-80: #0C5F37ff;
+  --color-green-90: #094428ff;
+  --color-green-100: #052918ff;
 
   /* Yellow Colors */
-  --color-yellow-10: #faf2e1ff;
-  --color-yellow-20: #f4e4c2ff;
-  --color-yellow-30: #efd7a4ff;
-  --color-yellow-40: #e9c985ff;
-  --color-yellow-50: #e9be63ff;
-  --color-yellow-60: #dfb04bff;
-  --color-yellow-70: #ce9f3aff;
-  --color-yellow-80: #c19027ff;
-  --color-yellow-90: #a47b23ff;
-  --color-yellow-100: #5d4614ff;
+  --color-yellow-10: #FDF6E6ff;
+  --color-yellow-20: #FBE9C5ff;
+  --color-yellow-30: #F9DB9Fff;
+  --color-yellow-40: #F4BE52ff;
+  --color-yellow-50: #EFA208ff;
+  --color-yellow-60: #D79207ff;
+  --color-yellow-70: #BF8206ff;
+  --color-yellow-80: #886004ff;
+  --color-yellow-90: #6C4903ff;
+  --color-yellow-100: #483102ff;
 
   /* Blue Colors */
-  --color-blue-10: #eef4fdff;
-  --color-blue-20: #cadefaff;
-  --color-blue-30: #9abdf1ff;
-  --color-blue-40: #5d96eaff;
-  --color-blue-50: #3179e2ff;
-  --color-blue-60: #175bd3ff;
-  --color-blue-70: #1752baff;
-  --color-blue-80: #1a4293ff;
-  --color-blue-90: #103684ff;
-  --color-blue-100: #042a76ff;
+  --color-blue-10: #E9F2FEff;
+  --color-blue-20: #BCD6FCff;
+  --color-blue-30: #91BBFAff;
+  --color-blue-40: #4992FEff;
+  --color-blue-50: #0A65EBff;
+  --color-blue-60: #0B52D0ff;
+  --color-blue-70: #0B43A5ff;
+  --color-blue-80: #08358Eff;
+  --color-blue-90: #03266Cff;
+  --color-blue-100: #001642ff;
 
   /* Red Colors */
-  --color-red-10: #fbe2dfff;
-  --color-red-20: #f8c2beff;
-  --color-red-30: #f7a29cff;
-  --color-red-40: #f4827aff;
-  --color-red-50: #f15e54ff;
-  --color-red-60: #dd4a41ff;
-  --color-red-70: #c94036ff;
-  --color-red-80: #aa3a31ff;
-  --color-red-90: #953832ff;
-  --color-red-100: #5c221fff;
+  --color-red-10: #FDEBEAff;
+  --color-red-20: #FBCBC6ff;
+  --color-red-30: #F8A6A0ff;
+  --color-red-40: #F3695Fff;
+  --color-red-50: #DA3A2Fff;
+  --color-red-60: #C4342Aff;
+  --color-red-70: #AE2E26ff;
+  --color-red-80: #992921ff;
+  --color-red-90: #6D1D18ff;
+  --color-red-100: #41110Eff;
 
   /* Neutral Colors */
   --color-neutral-10: #f5f5f5ff;
