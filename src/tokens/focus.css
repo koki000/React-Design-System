@@ -1,6 +1,13 @@
-/* Semantic Focus Tokens */
+/* Focus Tokens */
+
 :root {
+  --focus-default: var(--color-green-100);
+  --focus-on-color: var(--color-neutral-white);
+  --focus-inverse: var(--color-neutral-white);
+}
+
+[data-theme='dark'] {
   --focus-default: var(--color-brand-10);
-  --focus-inverse: var(--background-primary);
-  --focus-on-color: var(--color-white);
+  --focus-on-color: var(--color-neutral-white);
+  --focus-inverse: var(--color-neutral-black);
 }

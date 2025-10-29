@@ -1,15 +1,45 @@
-/* Semantic Link Tokens */
+/* Link Tokens */
+
 :root {
+  /* Default Links */
   --link-default-rest: var(--color-brand-50);
   --link-default-hover: var(--color-brand-60);
   --link-default-active: var(--color-brand-70);
+
+  /* Subtle Links */
   --link-subtle-rest: var(--color-neutral-100);
-  --link-subtle-hover: var(--color-neutral-100);
+  --link-subtle-hover: var(--color-neutral-90);
   --link-subtle-active: var(--color-neutral-80);
+
+  /* Danger Links */
   --link-danger-rest: var(--color-red-60);
   --link-danger-hover: var(--color-red-70);
   --link-danger-active: var(--color-red-80);
-  --link-on-color-rest: var(--color-white);
+
+  /* On Color Links */
+  --link-on-color-rest: var(--color-neutral-white);
+  --link-on-color-hover: var(--color-neutral-10);
+  --link-on-color-active: var(--color-neutral-20);
+}
+
+[data-theme='dark'] {
+  /* Default Links */
+  --link-default-rest: var(--color-brand-50);
+  --link-default-hover: var(--color-brand-60);
+  --link-default-active: var(--color-brand-70);
+
+  /* Subtle Links */
+  --link-subtle-rest: var(--color-neutral-white);
+  --link-subtle-hover: var(--color-neutral-10);
+  --link-subtle-active: var(--color-neutral-20);
+
+  /* Danger Links */
+  --link-danger-rest: var(--color-red-60);
+  --link-danger-hover: var(--color-red-70);
+  --link-danger-active: var(--color-red-80);
+
+  /* On Color Links */
+  --link-on-color-rest: var(--color-neutral-white);
   --link-on-color-hover: var(--color-neutral-10);
   --link-on-color-active: var(--color-neutral-20);
 }

@@ -1,0 +1,112 @@
+@import '../tokens/background.css';
+@import '../tokens/text.css';
+@import '../tokens/typography.css';
+@import '../tokens/spacing.css';
+@import '../tokens/radius.css';
+@import '../tokens/action.css';
+@import '../tokens/focus.css';
+@import '../tokens/icon.css';
+
+/* Overlay */
+.ds-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: var(--space-l-32);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+.ds-modal-overlay.ds-modal--visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Dialog */
+.ds-modal {
+    background: var(--background-primary);
+    color: var(--text-primary);
+    border-radius: var(--radii-m-4);
+    min-width: 420px;
+    max-width: 720px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: var(--space-m-16);
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale(0.98) translateY(16px);
+    transition: opacity 0.25s cubic-bezier(.4,0,.2,1), transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+.ds-modal--visible .ds-modal {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.ds-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-m-12);
+    margin-bottom: var(--space-m-24);
+}
+
+.ds-modal__header-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-m-12);
+}
+
+.ds-modal__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    color: var(--icon-brand);
+}
+
+.ds-modal__title {
+    font: var(--font-heading-xs);
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.ds-modal__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.ds-modal__body {
+    font: var(--font-body-m-skinny);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-l-40);
+}
+
+.ds-modal__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-m-16);
+}
+
+/* Types */
+.ds-modal--passive .ds-modal__footer {
+    justify-content: center;
+}
+
+/* simple responsive */
+@media (max-width: 480px) {
+    .ds-modal {
+        width: 100%;
+        padding: var(--space-m-12);
+    }
+
+    .ds-modal__title {
+        font-size: 18px;
+    }
+}

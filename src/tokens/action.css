@@ -1,17 +1,85 @@
-/* Semantic Action Tokens */
+/* Action Semantic Tokens */
+
 :root {
+  /* Primary Actions */
   --action-primary-rest: var(--color-brand-50);
   --action-primary-hover: var(--color-brand-60);
   --action-primary-active: var(--color-brand-70);
-  --action-secondary-rest: var(--color-neutral-80);
-  --action-secondary-hover: var(--color-neutral-10);
-  --action-secondary-active: var(--color-neutral-20);
-  --action-tertiary-rest: var(--color-neutral-80);
-  --action-tertiary-hover: var(--color-neutral-10);
-  --action-tertiary-active: var(--color-neutral-20);
-  --action-danger-rest: var(--color-red-60);
-  --action-danger-hover: var(--color-red-70);
-  --action-danger-active: var(--color-red-80);
+  
+  /* Primary Danger Actions */
+  --action-primary-danger-rest: var(--color-red-50);
+  --action-primary-danger-hover: var(--color-red-60);
+  --action-primary-danger-active: var(--color-red-70);
+  
+  /* Secondary Actions */
+  --action-secondary-border: var(--color-transparent-20);
+  --action-secondary-background-hover: var(--color-transparent-10);
+  --action-secondary-background-active: var(--color-transparent-20);
+  
+  /* Secondary Danger Actions */
+  --action-secondary-danger-border: var(--color-red-60);
+  --action-secondary-danger-background-hover: var(--color-red-10);
+  --action-secondary-danger-background-active: var(--color-red-20);
+  
+  /* Tertiary Actions */
+  --action-tertiary-background-hover: var(--color-transparent-10);
+  --action-tertiary-background-active: var(--color-transparent-20);
+  
+  /* Tertiary Danger Actions */
+  --action-tertiary-danger-background-hover: var(--color-red-10);
+  --action-tertiary-danger-background-active: var(--color-red-20);
+  
+  /* On Color Actions */
+  --action-on-color-background-hover: var(--color-transparent-10);
+  --action-on-color-background-active: var(--color-transparent-20);
+  
+  /* Inverse Actions */
+  --action-inverse-background-hover: var(--color-transparent-10);
+  --action-inverse-background-active: var(--color-transparent-20);
+  
+  /* Disabled & Unselected */
+  --action-disabled: var(--color-neutral-30);
+  --action-unselected: var(--color-neutral-20);
+}
+
+[data-theme='dark'] {
+  /* Primary Actions */
+  --action-primary-rest: var(--color-brand-50);
+  --action-primary-hover: var(--color-brand-60);
+  --action-primary-active: var(--color-brand-70);
+  
+  /* Primary Danger Actions */
+  --action-primary-danger-rest: var(--color-red-60);
+  --action-primary-danger-hover: var(--color-red-70);
+  --action-primary-danger-active: var(--color-red-80);
+  
+  /* Secondary Actions */
+  --action-secondary-border: var(--color-transparent-20);
+  --action-secondary-background-hover: var(--color-transparent-10);
+  --action-secondary-background-active: var(--color-transparent-20);
+  
+  /* Secondary Danger Actions */
+  --action-secondary-danger-border: var(--color-red-60);
+  --action-secondary-danger-background-hover: var(--color-red-100);
+  --action-secondary-danger-background-active: var(--color-red-90);
+  
+  /* Tertiary Actions */
+  --action-tertiary-background-hover: var(--color-transparent-10);
+  --action-tertiary-background-active: var(--color-transparent-20);
+  
+  /* Tertiary Danger Actions */
+  --action-tertiary-danger-background-hover: var(--color-red-100);
+  --action-tertiary-danger-background-active: var(--color-red-90);
+  
+  /* On Color Actions */
+  --action-on-color-background-hover: var(--color-transparent-10);
+  --action-on-color-background-active: var(--color-transparent-20);
+  
+  /* Inverse Actions */
+  --action-inverse-background-hover: var(--color-transparent-10);
+  --action-inverse-background-active: var(--color-transparent-20);
+  
+  /* Disabled & Unselected */
   --action-disabled: var(--color-neutral-70);
   --action-unselected: var(--color-neutral-30);
 }

@@ -1,9 +1,21 @@
-/* Semantic Text Tokens */
+/* Text Tokens */
+
 :root {
-  --text-primary: var(--color-white);
+  --text-primary: var(--color-neutral-black);
+  --text-secondary: var(--color-neutral-80);
+  --text-placeholder: var(--color-neutral-60);
+  --text-on-color-light: var(--color-neutral-white);
+  --text-on-color-dark: var(--color-neutral-black);
+  --text-disabled: var(--color-neutral-40);
+  --text-inverse: var(--color-neutral-white);
+}
+
+[data-theme='dark'] {
+  --text-primary: var(--color-neutral-white);
   --text-secondary: var(--color-neutral-20);
   --text-placeholder: var(--color-neutral-40);
-  --text-on-color: var(--color-white);
+  --text-on-color-light: var(--color-neutral-white);
+  --text-on-color-dark: var(--color-neutral-black);
   --text-disabled: var(--color-neutral-60);
-  --text-inverse: var(--color-black);
+  --text-inverse: var(--color-neutral-black);
 }

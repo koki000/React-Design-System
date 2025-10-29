@@ -1,0 +1,51 @@
+/* SegmentedControl CSS - uses semantic tokens */
+@import '../tokens/border.css';
+@import '../tokens/text.css';
+@import '../tokens/typography.css';
+@import '../tokens/spacing.css';
+@import '../tokens/surface.css';
+@import '../tokens/focus.css';
+@import '../tokens/radius.css';
+@import '../tokens/background.css';
+
+.ds-segmented-control {
+  display: flex;
+  gap: var(--space-s-4);
+  background: var(--surface-neutral-rest);
+  padding: var(--space-s-4);
+  width: fit-content;
+  background: var(--background-secondary);
+}
+
+.ds-segment {
+background: transparent;
+  color: var(--text-secondary);
+  border: 0;
+  font: var(--font-body-m-skinny);
+  padding: var(--space-m-12) var(--space-l-32);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  outline: none;
+  min-width: 80px;
+}
+.ds-segment--active {
+  color: var(--text-primary);
+  background: var(--surface-neutral-rest);
+  border-color: var(--border-brand);
+}
+.ds-segment:hover:not(.ds-segment--disabled):not(.ds-segment--active) {
+  color: var(--text-primary);
+  background: var(--surface-neutral-hover);
+  border-color: var(--border-brand);
+}
+.ds-segment:focus:not(.ds-segment--disabled) {
+  outline: 2px solid var(--focus-default);
+}
+.ds-segment:focus:not(:focus-visible) {
+  outline: none;
+}
+.ds-segment--disabled {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}

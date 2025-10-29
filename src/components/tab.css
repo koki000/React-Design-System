@@ -1,0 +1,65 @@
+@import '../tokens/border.css';
+@import '../tokens/text.css';
+@import '../tokens/typography.css';
+@import '../tokens/spacing.css';
+
+.ds-tabbar {
+  display: flex;
+  gap: var(--space-m-16);
+  border-bottom: 2px solid var(--border-subtle);
+  width: 100%;
+}
+.ds-tabbar--left {
+  justify-content: flex-start;
+}
+.ds-tabbar--center {
+  justify-content: center;
+}
+.ds-tabbar--right {
+  justify-content: flex-end;
+}
+
+.ds-tab {
+  background: none;
+  border: none;
+  outline: none;
+  font: var(--font-body-m-skinny);
+  color: var(--text-secondary);
+  padding: var(--space-m-12) var(--space-s-8);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+  min-width: 80px;
+}
+.ds-tab__label {
+  pointer-events: none;
+}
+.ds-tab--active {
+  color: var(--text-primary);
+}
+.ds-tab--active .ds-tab__indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--border-brand);
+  border-radius: 2px;
+  content: '';
+  display: block;
+}
+.ds-tab:hover:not(.ds-tab--disabled) {
+  color: var(--text-primary);
+}
+.ds-tab:focus:not(.ds-tab--disabled) {
+  outline: 2px solid var(--focus-default);
+}
+/* Refined behavior for browsers supporting :focus-visible */
+.ds-tab:focus:not(:focus-visible) {
+  outline: none;
+}
+.ds-tab--disabled {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}

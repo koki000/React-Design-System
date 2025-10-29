@@ -1,6 +1,13 @@
-/* Semantic Border Tokens */
+/* Border Tokens */
+
 :root {
+  --border-subtle: var(--color-neutral-20);
+  --border-strong: var(--color-neutral-40);
+  --border-brand: var(--color-brand-50);
+}
+
+[data-theme='dark'] {
   --border-subtle: var(--color-neutral-70);
   --border-strong: var(--color-neutral-50);
-  --border-interactive: var(--color-brand-50);
+  --border-brand: var(--color-brand-50);
 }

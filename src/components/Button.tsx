@@ -5,9 +5,11 @@ export type ButtonType =
     | "primary"
     | "secondary"
     | "tertiary"
-    | "danger-primary"
-    | "danger-secondary"
-    | "danger-tertiary";
+    | "primary-danger"
+    | "secondary-danger"
+    | "tertiary-danger"
+    | "on-color"
+    | "inverse";
 export type ButtonSize = "small" | "medium" | "large";
 export type ButtonState = "rest" | "hover" | "active" | "focus" | "disabled" | "loading";
 export type ButtonContent = "text" | "leading-icon" | "trailing-icon" | "icon";
@@ -26,9 +28,9 @@ export interface ButtonProps {
     className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
     type = "primary",
-    size = "medium",
+    size = "large",
     state = "rest",
     content = "text",
     children,
@@ -64,7 +66,7 @@ const Button: React.FC<ButtonProps> = ({
         buttonContent = (
             <>
                 <span className="ds-btn__text">{children}</span>
-                {trailingIcon}
+                {icon}
             </>
         );
     } else {
@@ -85,5 +87,3 @@ const Button: React.FC<ButtonProps> = ({
         </button>
     );
 };
-
-export default Button;

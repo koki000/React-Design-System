@@ -104,3 +104,79 @@
 
   --font-caption-m-uppercase: var(--font-caption-m-uppercase-weight) var(--font-caption-m-uppercase-size) / var(--font-caption-m-uppercase-line-height) var(--font-family);
 }
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  :root {
+    /* Display XL */
+    --display-xl-size: 72px;
+    --display-xl-line-height: 87px;
+
+    /* Display L */
+    --display-l-size: 64px;
+    --display-l-line-height: 77px;
+
+    /* Display M */
+    --display-m-size: 56px;
+    --display-m-line-height: 68px;
+
+    /* Heading XL */
+    --heading-xl-size: 48px;
+    --heading-xl-line-height: 58px;
+
+    /* Heading L */
+    --heading-l-size: 36px;
+    --heading-l-line-height: 47px;
+
+    /* Heading M */
+    --heading-m-size: 32px;
+    --heading-m-line-height: 42px;
+
+    /* Heading S */
+    --heading-s-size: 24px;
+    --heading-s-line-height: 32px;
+
+    /* Heading XS */
+    --heading-xs-size: 20px;
+    --heading-xs-line-height: 26px;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  :root {
+    /* Display XL */
+    --display-xl-size: 50px;
+    --display-xl-line-height: 58px;
+
+    /* Display L */
+    --display-l-size: 46px;
+    --display-l-line-height: 51px;
+
+    /* Display M */
+    --display-m-size: 40px;
+    --display-m-line-height: 44px;
+
+    /* Heading XL */
+    --heading-xl-size: 36px;
+    --heading-xl-line-height: 44px;
+
+    /* Heading L */
+    --heading-l-size: 32px;
+    --heading-l-line-height: 39px;
+
+    /* Heading M */
+    --heading-m-size: 22px;
+    --heading-m-line-height: 27px;
+
+    /* Heading S */
+    --heading-s-size: 20px;
+    --heading-s-line-height: 24px;
+
+    /* Heading XS */
+    --heading-xs-size: 18px;
+    --heading-xs-line-height: 23px;
+
+    /* Action L */
+    --action-l-kerning: 1px;
+  }
+}

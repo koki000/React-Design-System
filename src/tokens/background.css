@@ -1,8 +1,17 @@
-/* Semantic Background Tokens */
+/* Background Tokens */
+
 :root {
-  --background-primary: var(--color-white);
+  --background-primary: var(--color-neutral-white);
   --background-secondary: var(--color-neutral-10);
   --background-tertiary: var(--color-neutral-30);
   --background-inverse: var(--color-neutral-90);
   --background-brand: var(--color-brand-50);
+}
+
+[data-theme='dark'] {
+  --background-primary: var(--color-neutral-90);
+  --background-secondary: var(--color-neutral-80);
+  --background-tertiary: var(--color-neutral-70);
+  --background-inverse: var(--color-neutral-white);
+  --background-brand: var(--color-green-50);
 }

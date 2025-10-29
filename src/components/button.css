@@ -3,23 +3,34 @@
 @import '../tokens/spacing.css';
 @import '../tokens/radius.css';
 @import '../tokens/stroke.css';
+@import '../tokens/size.css';
+@import '../tokens/action.css';
+@import '../tokens/text.css';
 
 .ds-btn {
-  font-family: var(--font-family);
-  font-size: var(--font-action-m-size);
-  font-weight: var(--font-action-m-weight);
-  line-height: var(--font-action-m-line-height);
+  font: var(--font-action-m);
   border-radius: var(--radii-none);
   border-width: var(--stroke-width-m);
   border-style: solid;
-  padding: var(--space-m-12) var(--space-m-24);
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border 0.2s;
+  display: flex;
+  align-items: center;
+  gap:8px;
+  height: var(--size-l-40);
+  justify-content: center;
+}
+.ds-btn:focus {
+  outline: 2px solid var(--focus-default);
+  outline-offset: 1px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .ds-btn--primary {
   background: var(--action-primary-rest);
-  color: var(--text-on-color);
+  color: var(--text-inverse);
   border-color: var(--action-primary-rest);
 }
 .ds-btn--primary:hover {
@@ -33,74 +44,168 @@
 
 .ds-btn--secondary {
   background: transparent;
-  color: var(--action-secondary-rest);
-  border-color: var(--action-secondary-rest);
+  color: var(--text-primary);
+  border-color: var(--action-secondary-border);
 }
 .ds-btn--secondary:hover {
-  background: var(--action-secondary-hover);
+  background: var(--action-secondary-background-hover);
 }
 .ds-btn--secondary:active {
-  background: var(--action-secondary-active);
+  background: var(--action-secondary-background-active);
 }
 
 .ds-btn--tertiary {
   background: transparent;
-  color: var(--action-tertiary-rest);
+  color: var(--text-primary);
   border-color: transparent;
 }
 .ds-btn--tertiary:hover {
-    background: var(--action-tertiary-hover);
+    background: var(--action-tertiary-background-hover);
 }
 .ds-btn--tertiary:active {
-    background: var(--action-tertiary-active);
+    background: var(--action-tertiary-background-active);
 }
 
-.ds-btn--danger-primary {
-  background: var(--action-danger-rest);
-  color: var(--text-on-color);
-  border-color: var(--action-danger-rest);
-}
-.ds-btn--danger-primary:hover {
-  background: var(--action-danger-hover);
-  border-color: var(--action-danger-hover);
-}
-.ds-btn--danger-primary:active {
-  background: var(--action-danger-active);
-  border-color: var(--action-danger-active);
-}
-
-.ds-btn--danger-secondary {
+.ds-btn--on-color {
   background: transparent;
-  color: var(--action-danger-rest);
-  border-color: var(--action-danger-rest);
+  color: var(--text-on-color-light);
+  border-color: transparent;
 }
-.ds-btn--danger-secondary:hover {
-  color: var(--action-danger-hover);
-  border-color: var(--action-danger-hover);
+.ds-btn--on-color:hover {
+    background: var(--action-on-color-background-hover);
 }
-.ds-btn--danger-secondary:active {
-  color: var(--action-danger-active);
-  border-color: var(--action-danger-active);
+.ds-btn--on-color:active {
+    background: var(--action-on-color-background-active);
 }
 
-.ds-btn--disabled,
-.ds-btn:disabled {
+.ds-btn--inverse {
+  background: transparent;
+  color: var(--text-inverse);
+  border-color: transparent;
+}
+.ds-btn--inverse:hover {
+    background: var(--action-inverse-background-hover);
+}
+.ds-btn--inverse:active {
+    background: var(--action-inverse-background-active);
+}
+
+.ds-btn--primary-danger {
+  background: var(--action-primary-danger-rest);
+  color: var(--text-inverse);
+  border-color: var(--action-primary-danger-rest);
+}
+.ds-btn--primary-danger:hover {
+  background: var(--action-primary-danger-hover);
+  border-color: var(--action-primary-danger-hover);
+}
+.ds-btn--primary-danger:active {
+  background: var(--action-primary-danger-active);
+  border-color: var(--action-primary-danger-active);
+}
+
+.ds-btn--secondary-danger {
+  background: transparent;
+  color: var(--support-error-strong);
+  border-color: var(--action-secondary-danger-border);
+}
+.ds-btn--secondary-danger:hover {
+  background: var(--action-secondary-danger-background-hover);
+}
+.ds-btn--secondary-danger:active {
+  background: var(--action-secondary-danger-background-active);
+}
+
+.ds-btn--tertiary-danger {
+  background: transparent;
+  color: var(--support-error-strong);
+  border-color: transparent;
+}
+.ds-btn--tertiary-danger:hover {
+    background: var(--action-tertiary-danger-background-hover);
+}
+.ds-btn--tertiary-danger:active {
+    background: var(--action-tertiary-danger-background-active);
+}
+
+
+.ds-btn--primary.ds-btn:disabled, .ds-btn--danger-primary.ds-btn:disabled {
   background: var(--action-disabled);
+  color: var(--text-inverse);
+  border-color: var(--action-disabled);
+  cursor: not-allowed;
+}
+
+.ds-btn--secondary.ds-btn:disabled, .ds-btn--secondary-danger.ds-btn:disabled {
   color: var(--text-disabled);
   border-color: var(--action-disabled);
   cursor: not-allowed;
-  opacity: 0.6;
+}
+.ds-btn--secondary.ds-btn:hover:disabled, .ds-btn--secondary-danger:hover.ds-btn:disabled{
+    background: transparent;
+}
+
+.ds-btn--tertiary.ds-btn:disabled, .ds-btn--tertiary-danger.ds-btn:disabled {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+}
+.ds-btn--tertiary.ds-btn:disabled:hover, .ds-btn--tertiary-danger.ds-btn:disabled:hover{
+    background: transparent;
 }
 
 .ds-btn--small {
   font-size: var(--font-action-m-size);
-  padding: var(--space-s-4) var(--space-m-12);
+  padding: var(--space-none) var(--space-m-12);
+  height: var(--size-m-24);
 }
+.ds-btn--small.ds-btn--icon{
+  width: var(--size-m-24);
+  padding:0;
+}
+.ds-btn--small svg{
+    width: var(--size-m-16);
+    height: var(--size-m-16);
+}
+.ds-btn--small .ds-btn--icon{
+    width: var(--size-m-16);
+    height: var(--size-m-16);
+    padding:0;
+}
+
 .ds-btn--medium {
-  font-size: var(--font-action-l-size);
-  padding: var(--space-m-12) var(--space-m-24);
+  font-size: var(--font-action-m-size);
+  padding: var(--space-none) var(--space-m-16);
+  height: var(--size-l-32);
 }
+.ds-btn--medium.ds-btn--icon{
+  width: var(--size-m-32);
+  padding:0;
+}
+.ds-btn--medium svg{
+    width: var(--size-m-20);
+    height: var(--size-m-20);
+}
+.ds-btn--large.ds-btn--icon{
+    height: var(--size-l-32);
+    padding:0;
+}
+
 .ds-btn--large {
-  font-size: var(--font-display-m-size);
-  padding: var(--space-m-16) var(--space-l-32);
+  font-size: var(--font-action-l-size);
+  padding: var(--space-none) var(--space-m-16);
+  height: var(--size-l-40);
 }
+.ds-btn--large svg{
+    width: var(--size-m-20);
+    height: var(--size-m-20);
+}
+.ds-btn--large.ds-btn--icon{
+    width: var(--size-l-40);
+    height: var(--size-l-40);
+    padding:0;
+}
+
+.ds-btn--icon{
+    flex-shrink: 0;
+}
+

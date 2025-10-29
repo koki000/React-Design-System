@@ -1,5 +1,10 @@
-export { default as Button } from './Button';
+export { Button } from './Button';
 export { Link } from './Link';
-export { default as Banner } from './Banner';
-export { default as Toast } from './Toast';
+export { Banner } from './Banner';
+export { Toast } from './Toast';
 export { ToastProvider, useToast } from './ToastProvider';
+export { Divider } from './Divider';
+export { TabBar } from './TabBar';
+export { TabItem } from './TabItem';
+export { Modal, confirm } from './Modal';
+export { SegmentedControl } from './SegmentedControl';

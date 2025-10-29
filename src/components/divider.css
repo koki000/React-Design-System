@@ -1,0 +1,20 @@
+@import '../tokens/border.css';
+@import '../tokens/stroke.css';
+@import '../tokens/spacing.css';
+
+.ds-divider {
+    box-sizing: border-box;
+    background: none;
+    display: block;
+}
+
+.ds-divider--horizontal {
+    height: 0;
+    width: 100%;
+}
+
+.ds-divider--vertical {
+    width: 0;
+    height: 100%;
+    display: inline-block;
+}

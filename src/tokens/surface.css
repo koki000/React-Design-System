@@ -1,12 +1,35 @@
-/* Semantic Surface Tokens */
+/* Surface Tokens */
+
 :root {
+  /* Neutral Surface */
+  --surface-neutral-rest: var(--color-neutral-white);
+  --surface-neutral-hover: var(--color-neutral-10);
+  --surface-neutral-active: var(--color-brand-10);
+
+  /* Subtle Surface */
+  --surface-subtle-rest: var(--color-neutral-10);
+  --surface-subtle-hover: var(--color-neutral-20);
+  --surface-subtle-active: var(--color-brand-10);
+
+  /* Bold Surface */
+  --surface-bold-rest: var(--color-neutral-90);
+  --surface-bold-hover: var(--color-neutral-100);
+  --surface-bold-active: var(--color-brand-90);
+}
+
+[data-theme='dark'] {
+  /* Neutral Surface */
   --surface-neutral-rest: var(--color-neutral-90);
   --surface-neutral-hover: var(--color-neutral-80);
   --surface-neutral-active: var(--color-brand-90);
+
+  /* Subtle Surface */
   --surface-subtle-rest: var(--color-neutral-80);
   --surface-subtle-hover: var(--color-neutral-70);
   --surface-subtle-active: var(--color-brand-90);
-  --surface-bold-rest: var(--color-white);
+
+  /* Bold Surface */
+  --surface-bold-rest: var(--color-neutral-white);
   --surface-bold-hover: var(--color-neutral-10);
   --surface-bold-active: var(--color-brand-10);
 }

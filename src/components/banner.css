@@ -30,6 +30,10 @@
     display: inline-block;
     color: inherit;
 }
+.ds-banner__link:focus {
+  outline: 2px solid var(--focus-default);
+  outline-offset: 1px;
+}
 
 .ds-banner__close {
     background: none;
@@ -41,14 +45,13 @@
 .ds-banner--strong .ds-banner__close {
     color: var(--icon-on-color);
 }
+.ds-banner--subtle .ds-banner__close {
+    color: var(--icon-primary);
+}
 
 /* Status variants */
 .ds-banner--info {
     background: var(--support-info-subtle);
-    color: var(--support-info-strong);
-}
-
-.ds-banner--info .ds-banner__link {
     color: var(--support-info-strong);
 }
 
@@ -70,20 +73,20 @@
 /* Emphasis variants */
 .ds-banner--strong.ds-banner--info {
     background: var(--support-info);
-    color: var(--text-on-color);
+    color: var(--text-inverse);
 }
 
 .ds-banner--strong.ds-banner--success {
     background: var(--support-success);
-    color: var(--text-on-color);
+    color: var(--text-inverse);
 }
 
 .ds-banner--strong.ds-banner--warning {
     background: var(--support-warning);
-    color: var(--text-on-color);
+    color: var(--text-on-color-dark);
 }
 
 .ds-banner--strong.ds-banner--error {
     background: var(--support-error);
-    color: var(--text-on-color);
+    color: var(--text-inverse);
 }

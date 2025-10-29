@@ -11,6 +11,14 @@
   transition: color 0.2s;
 }
 
+.ds-link:focus {
+  outline: 2px solid var(--focus-default);
+  outline-offset: 1px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .ds-link--default {
   color: var(--link-default-rest);
 }
@@ -54,13 +62,16 @@
 }
 
 .ds-link--onColor {
+  text-decoration: none;
   color: var(--link-on-color-rest);
 }
 .ds-link--onColor:hover,
 .ds-link--onColor.ds-link--hover {
   color: var(--link-on-color-hover);
+  text-decoration: underline;
 }
 .ds-link--onColor:active,
 .ds-link--onColor.ds-link--active {
   color: var(--link-on-color-active);
+  text-decoration: underline;
 }

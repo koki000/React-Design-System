@@ -1,0 +1,72 @@
+@import '../tokens/text.css';
+@import '../tokens/action.css';
+@import '../tokens/focus.css';
+@import '../tokens/spacing.css';
+
+.ds-breadcrumb {
+  width: 100%;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.ds-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s-4);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sizes */
+.ds-breadcrumb--small .ds-breadcrumb__item {
+  font-size: 12px;
+  line-height: 16px;
+}
+.ds-breadcrumb--medium .ds-breadcrumb__item {
+  font-size: 14px;
+  line-height: 20px;
+}
+.ds-breadcrumb--large .ds-breadcrumb__item {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* States */
+.ds-breadcrumb__link {
+  color: var(--action-primary-rest);
+  text-decoration: none;
+}
+.ds-breadcrumb__link:hover {
+  color: var(--action-primary-hover);
+}
+.ds-breadcrumb__link:focus {
+  color: var(--action-primary-rest);
+  outline: 2px solid var(--focus-default);
+  outline-offset: 2px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+.ds-breadcrumb__link:active {
+  color: var(--action-primary-active);
+}
+.ds-breadcrumb__link.ds-breadcrumb__link--readonly {
+  color: var(--text-primary);
+  pointer-events: none;
+  cursor: default;
+}
+
+.ds-breadcrumb__arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+  color: var(--action-primary-rest);
+}
+
+.ds-breadcrumb__separator {
+  display: inline-block;
+}
+
+.ds-breadcrumb__item--last .ds-breadcrumb__separator {
+  display: none;
+}

@@ -1,15 +1,45 @@
-/* Semantic Support Tokens */
+/* Support/Status Tokens */
+
 :root {
-    --support-info: var(--color-blue-60);
-    --support-error: var(--color-red-60);
-    --support-warning: var(--color-yellow-60);
-    --support-success: var(--color-green-60);
-    --support-info-subtle: var(--color-blue-20);
-    --support-success-subtle: var(--color-green-20);
-    --support-warning-subtle: var(--color-yellow-20);
-    --support-error-subtle: var(--color-red-20);
-    --support-success-strong: var(--color-green-80);
-    --support-warning-strong: var(--color-yellow-80);
-    --support-error-strong: var(--color-red-80);
-    --support-info-strong: var(--color-blue-80);
+  /* Error */
+  --support-error: var(--color-red-60);
+  --support-error-subtle: var(--color-red-20);
+  --support-error-strong: var(--color-red-80);
+
+  /* Warning */
+  --support-warning: var(--color-yellow-60);
+  --support-warning-subtle: var(--color-yellow-20);
+  --support-warning-strong: var(--color-yellow-80);
+
+  /* Success */
+  --support-success: var(--color-green-60);
+  --support-success-subtle: var(--color-green-20);
+  --support-success-strong: var(--color-green-80);
+
+  /* Info */
+  --support-info: var(--color-blue-60);
+  --support-info-subtle: var(--color-blue-10);
+  --support-info-strong: var(--color-blue-80);
+}
+
+[data-theme='dark'] {
+  /* Error */
+  --support-error: var(--color-red-60);
+  --support-error-subtle: var(--color-red-100);
+  --support-error-strong: var(--color-red-20);
+
+  /* Warning */
+  --support-warning: var(--color-yellow-60);
+  --support-warning-subtle: var(--color-yellow-100);
+  --support-warning-strong: var(--color-yellow-20);
+
+  /* Success */
+  --support-success: var(--color-green-60);
+  --support-success-subtle: var(--color-green-100);
+  --support-success-strong: var(--color-green-20);
+
+  /* Info */
+  --support-info: var(--color-blue-40);
+  --support-info-subtle: var(--color-blue-100);
+  --support-info-strong: var(--color-blue-20);
 }

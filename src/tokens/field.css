@@ -1,10 +1,25 @@
-/* Semantic Field Tokens */
+/* Field Tokens */
+
 :root {
+  /* Field Borders */
+  --field-border-rest: var(--color-neutral-40);
+  --field-border-hover: var(--color-neutral-40);
+  --field-border-active: var(--color-neutral-40);
+  --field-border-disabled: var(--color-neutral-30);
+
+  /* Field Backgrounds */
+  --field-background-hover: var(--color-neutral-10);
+  --field-background-disabled: var(--color-neutral-10);
+}
+
+[data-theme='dark'] {
+  /* Field Borders */
   --field-border-rest: var(--color-neutral-60);
   --field-border-hover: var(--color-neutral-60);
   --field-border-active: var(--color-neutral-60);
   --field-border-disabled: var(--color-neutral-70);
-  --field-border-error: var(--color-red-60);
+
+  /* Field Backgrounds */
   --field-background-hover: var(--color-neutral-80);
   --field-background-disabled: var(--color-neutral-80);
 }
